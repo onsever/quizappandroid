@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkCharcoal"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/questionNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="Question Name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/answerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answer_row_design"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Test"
+            android:textColor="@color/lightGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/answerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answer_row_design"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Test"
+            android:textColor="@color/lightGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/answerThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answer_row_design"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Test"
+            android:textColor="@color/lightGray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/answerFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answer_row_design"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Test"
+            android:textColor="@color/lightGray"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/next_question"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="15dp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <ProgressBar
+            android:id="@+id/questionProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="5"
+            android:scaleY="3.5"
+            android:minHeight="50dp"
+            android:progressBackgroundTint="@color/lightGray"
+            android:progress="0" />
+
+    </LinearLayout>
+
+</ScrollView>
